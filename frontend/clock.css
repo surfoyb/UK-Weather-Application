@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+.case {
+  width: 100%;
+  height: 100%;
+  /* background: transparent; */
+  border-radius: 50%;
+  background: url('images/water.jpg');
+  position: relative;
+  overflow: hidden;
+}
+
+.number {
+  --rotation: 0;
+  position: absolute;
+  color: white;
+  font-size: 2rem;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transform: rotate(var(--rotation));
+}
+.number1 {
+  --rotation: 30deg;
+}
+
+.number1-text {
+  transform: rotate(-30deg);
+}
+.number2 {
+  --rotation: 60deg;
+}
+
+.number2-text {
+  transform: rotate(-60deg);
+}
+.number3 {
+  --rotation: 90deg;
+}
+
+.number3-text {
+  transform: rotate(-90deg);
+}
+.number4 {
+  --rotation: 120deg;
+}
+
+.number4-text {
+  transform: rotate(-120deg);
+}
+.number5 {
+  --rotation: 150deg;
+}
+
+.number5-text {
+  transform: rotate(-150deg);
+}
+.number6 {
+  --rotation: 180deg;
+}
+
+.number6-text {
+  transform: rotate(-180deg);
+}
+.number7 {
+  --rotation: 210deg;
+}
+
+.number7-text {
+  transform: rotate(-210deg);
+}
+.number8 {
+  --rotation: 240deg;
+}
+
+.number8-text {
+  transform: rotate(-240deg);
+}
+.number9 {
+  --rotation: 270deg;
+}
+
+.number9-text {
+  transform: rotate(-270deg);
+}
+.number10 {
+  --rotation: 300deg;
+}
+
+.number10-text {
+  transform: rotate(-300deg);
+}
+.number11 {
+  --rotation: 330deg;
+}
+
+.number11-text {
+  transform: rotate(-330deg);
+}
+
+.case::after {
+  content: '';
+  position: absolute;
+  background-color: white;
+  z-index: 11;
+  width: 15px;
+  height: 15px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+
+.hand {
+  --rotation: 30;
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  background-color: white;
+  transform: translateX(-50%) rotate(calc(var(--rotation) * 1deg));
+  transform-origin: bottom;
+}
+
+.second {
+  background-color: red;
+  width: 2px;
+  height: 48%;
+  z-index: 10;
+}
+
+.minute {
+  width: 6px;
+  height: 44%;
+  border: solid 1.5px black;
+  border-radius: 3px;
+  z-index: 8;
+}
+
+.hour {
+  width: 8px;
+  height: 30%;
+  border: solid 1.5px black;
+  border-radius: 6px;
+}

@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.date-header {
+  margin: 5px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: transparent;
+  color: #333;
+  width: 100%;
+  height: 100%;
+}
+
+.weather-grid {
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 90%;
+  min-height: 90px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+}
+
+.time-p {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  color: black;
+}
+
+.box {
+  background-color: rgba(21, 149, 253, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+  color: black;
+  margin-top: 20px;
+  border-radius: 4px;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+
+.yellow {
+  color: rgb(252, 235, 6);
+}
+
+.light-grey {
+  color: rgb(182, 179, 179);
+}
+
+.grey {
+  color: #85878a;
+}
+
+.dark-grey {
+  color: #3a3b3b;
+}
+
+.temp-text {
+  position: absolute;
+  bottom: 10px;
+  right: 18px;
+  font-size: 20px;
+}
+
+.temp-unit {
+  position: absolute;
+  top: 5px;
+  right: 8px;
+  font-size: 10px;
+}
+
+.wind-speed-text {
+  position: absolute;
+  top: 2px;
+  font-size: 20px;
+}
+
+.wind-speed-unit {
+  position: absolute;
+  bottom: 5px;
+}
+
+.gust-speed-text {
+  position: absolute;
+  top: 2px;
+  font-size: 20px;
+  color: red;
+}
+
+.gust-speed-unit {
+  position: absolute;
+  bottom: 5px;
+  color: red;
+}
+
+.fas.fa-umbrella {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  font-size: 20px;
+  color: blue;
+}
+
+.rain-text {
+  position: absolute;
+  bottom: 3px;
+  right: 5px;
+  color: black;
+}
+
+.box i {
+  font-size: 2rem;
+}
+
+@media (max-width: 1300px) {
+  .box {
+    width: 40px;
+    height: 40px;
+  }
+  .box i {
+    font-size: 1.8rem;
+  }
+  .temp-text {
+    bottom: 6px;
+    right: 14px;
+    font-size: 18px;
+  }
+
+  .temp-unit {
+    top: 3px;
+    right: 8px;
+    font-size: 10px;
+  }
+  .wind-speed-text {
+    top: 2px;
+    font-size: 16px;
+  }
+
+  .wind-speed-unit {
+    font-size: 14px;
+    bottom: 5px;
+  }
+
+  .gust-speed-text {
+    top: 2px;
+    font-size: 14px;
+  }
+
+  .gust-speed-unit {
+    bottom: 5px;
+    font-size: 14px;
+  }
+  .fas.fa-umbrella {
+    top: 5px;
+    left: 5px;
+    font-size: 15px;
+  }
+
+  .rain-text {
+    bottom: 3px;
+    right: 5px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .box {
+    width: 35px;
+    height: 35px;
+  }
+  .box i {
+    font-size: 1.5rem;
+  }
+  .temp-text {
+    bottom: 8px;
+    right: 12px;
+    font-size: 15px;
+  }
+
+  .temp-unit {
+    top: 3px;
+    right: 8px;
+    font-size: 8px;
+  }
+  .wind-speed-text {
+    top: 2px;
+    font-size: 16px;
+  }
+
+  .wind-speed-unit {
+    font-size: 14px;
+    bottom: 5px;
+  }
+
+  .gust-speed-text {
+    top: 2px;
+    font-size: 14px;
+  }
+
+  .gust-speed-unit {
+    bottom: 5px;
+    font-size: 14px;
+  }
+  .fas.fa-umbrella {
+    top: 5px;
+    left: 5px;
+    font-size: 15px;
+  }
+
+  .rain-text {
+    bottom: 3px;
+    right: 5px;
+    font-size: 13px;
+  }
+}

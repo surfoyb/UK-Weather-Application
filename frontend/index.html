@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="app.css" />
+    <link rel="stylesheet" href="clock.css" />
+    <title>Weather Node</title>
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="bg1">
+        <div class="location-container">
+          <h2 id="location"></h2>
+          <form id="form">
+            <button type="button" id="locBtn">
+              <i class="fas fa-compass"></i>
+            </button>
+            <p><i class="fas fa-search"></i></p>
+            <input
+              type="text"
+              id="search"
+              placeholder="search location..."
+              autocomplete="off"
+            />
+            <button type="submit" id="btn">Search</button>
+            <div id="location-choices-div">
+              <datalist id="location-choices"> </datalist>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="bg2">
+        <div class="visibility-two-div">
+          <p class="visibility-two-header">Visibility</p>
+          <h2 class="visibility-two"></h2>
+          <p class="visibility-two-p"></p>
+        </div>
+      </div>
+      <div class="bg2">
+        <h2 class="day"></h2>
+      </div>
+      <div class="bg1">
+        <h2><i id="icon-two"></i></h2>
+      </div>
+      <div class="bg2">
+        <div class="temperature-div">
+          <p class="celcius">c</p>
+          <h2 class="temperature-text"></h2>
+        </div>
+      </div>
+      <div class="bg2">
+        <div class="wrapper">
+          <div class="container">
+            <h1>5 Day Forecast</h1>
+          </div>
+        </div>
+      </div>
+      <div class="bg1">
+        <div class="bg1" id="clock-face">
+          <div class="case">
+            <div class="hand hour" data-hour-hand></div>
+            <div class="hand minute" data-minute-hand=""></div>
+            <div class="hand second" data-second-hand=""></div>
+            <div class="number number1"><div class="number1-text">1</div></div>
+            <div class="number number2"><div class="number2-text">2</div></div>
+            <div class="number number3"><div class="number3-text">3</div></div>
+            <div class="number number4"><div class="number4-text">4</div></div>
+            <div class="number number5"><div class="number5-text">5</div></div>
+            <div class="number number6"><div class="number6-text">6</div></div>
+            <div class="number number7"><div class="number7-text">7</div></div>
+            <div class="number number8"><div class="number8-text">8</div></div>
+            <div class="number number9"><div class="number9-text">9</div></div>
+            <div class="number number10">
+              <div class="number10-text">10</div>
+            </div>
+            <div class="number number11">
+              <div class="number11-text">11</div>
+            </div>
+            <div class="number number12">
+              <div class="number12-text">12</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bg1">
+        <div class="speed-two-div">
+          <h2 class="speed-two"></h2>
+          <p class="speed-two-mph">mph</p>
+        </div>
+      </div>
+      <div class="bg2">
+        <div class="direction-container">
+          <h2 class="direction-two"></h2>
+          <div class="nsew">
+            <div class="compass n"><div class="n-text">N</div></div>
+            <div class="compass e"><div class="e-text">E</div></div>
+            <div class="compass s"><div class="s-text">S</div></div>
+            <div class="compass w"><div class="w-text">W</div></div>
+            <div class="circle"><i class="fas fa-long-arrow-alt-up"></i></div>
+          </div>
+        </div>
+      </div>
+      <div class="bg1">
+        <h2 class="rain-text2"></h2>
+      </div>
+      <div class="bg2">
+        <div class="humidity-div">
+          <h2 class="humidity-two"></h2>
+          <p>Humidity</p>
+        </div>
+      </div>
+      <div class="bg2">
+        <h2 class="date-two"></h2>
+      </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="clock.js"></script>
+  </body>
+</html>
